@@ -1,0 +1,15 @@
+{
+  "name": "MySap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hanif <abdurrahman.alhanif@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  	"build-admin-css": "node-sass --include-path scss admin/assets/scss/style.scss admin/assets/css/style.css",
+	"watch-admin-css": "nodemon -e scss -x \"npm run build-admin-css\""
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
