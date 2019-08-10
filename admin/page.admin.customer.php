@@ -393,59 +393,55 @@ switch(getPageSub()) {
                         <strong class="card-title">Kelola Data Customer</strong>
                     </div>
                     <div class="card-body">
-
-
-	                    <div class="table-responsive">
-	                        <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
-	                            <thead>
-	                                <tr>
-	                                	<th>No</th>
-	                                    <th>Username</th>
-	                                    <th>Password</th>
-	                                    <th>Nama Pemilik</th>
-	                                    <th>Nama Perusahaan</th>
-	                                    <th>No SPBU</th>
-	                                    <th>Alamat</th>
-	                                    <th>Email</th>
-	                                    <th>No Phone</th>
-	                                    <th>Lokasi SPBU</th>
-	                                    <th>Kapasitas Tangki</th>
-	                                    <th>Jenis BBM</th>
-	                                    <th>Aksi</th>
-	                                </tr>
-	                            </thead>
-	                            <tbody>
-	                                <?php
-	                                $i		= 1;
-	                                foreach((array)$data as $d) {
-	                                	?>
-	                                	<tr>
-	                                		<td><?php echo $i++ ?></td>
-	                                		<td><?php echo $d[11] ?></td>
-	                                		<td><?php echo $d[12] ?></td>
-	                                		<td><?php echo $d[2] ?></td>
-	                                		<td><?php echo $d[3] ?></td>
-	                                		<td><?php echo $d[4] ?></td>
-	                                		<td><?php echo $d[5] ?></td>
-	                                		<td><?php echo $d[6] ?></td>
-	                                		<td><?php echo $d[7] ?></td>
-	                                		<td><?php echo $d[8] ?></td>
-	                                		<td><?php echo $d[9] ?></td>
-	                                		<td><?php echo $d[10] ?></td>
-	                                		<td>
-	                                			<a href="?halaman=customer&aksi=ubah&id=<?php echo $d[0] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Ubah Data</a>
-	                                			<a href="?halaman=customer&aksi=ubahakun&id=<?php echo $d[1] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Ubah Password</a>
-	                                			<a href="?halaman=customer&aksi=hapus&id=<?php echo $d[0] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Hapus Data</a>
-	                                		</td>
-	                                	</tr>
-	                                	
-	                                	<?php
-	                                }
-	                                
-	                                ?>
-	                            </tbody>
-	                        </table>
-	                    </div>
+                        <table id="bootstrap-data-table-export" class="table dt-responsive table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                	<th>No</th>
+                                    <th>Username</th>
+                                    <th>Password</th>
+                                    <th>Nama Pemilik</th>
+                                    <th>Nama Perusahaan</th>
+                                    <th>No SPBU</th>
+                                    <th>Alamat</th>
+                                    <th>Email</th>
+                                    <th>No Phone</th>
+                                    <th>Lokasi SPBU</th>
+                                    <th>Kapasitas Tangki</th>
+                                    <th>Jenis BBM</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $i		= 1;
+                                foreach((array)$data as $d) {
+                                	?>
+                                	<tr>
+                                		<td><?php echo $i++ ?></td>
+                                		<td><?php echo $d[11] ?></td>
+                                		<td><?php echo $d[12] ?></td>
+                                		<td><?php echo $d[2] ?></td>
+                                		<td><?php echo $d[3] ?></td>
+                                		<td><?php echo $d[4] ?></td>
+                                		<td><?php echo $d[5] ?></td>
+                                		<td><?php echo $d[6] ?></td>
+                                		<td><?php echo $d[7] ?></td>
+                                		<td><?php echo $d[8] ?></td>
+                                		<td><?php echo $d[9] ?></td>
+                                		<td><?php echo $d[10] ?></td>
+                                		<td>
+                                			<a href="?halaman=customer&aksi=ubah&id=<?php echo $d[0] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Ubah Data</a>
+                                			<a href="?halaman=customer&aksi=ubahakun&id=<?php echo $d[1] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Ubah Password</a>
+                                			<a href="?halaman=customer&aksi=hapus&id=<?php echo $d[0] ?>" class="btn btn-primary btn-block"style="margin-bottom: 5px;">Hapus Data</a>
+                                		</td>
+                                	</tr>
+                                	
+                                	<?php
+                                }
+                                
+                                ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

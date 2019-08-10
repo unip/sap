@@ -49,7 +49,7 @@ if ($q && $q->rowCount () > 0) {
     </div>
 </div>
 
-<div class="content mt-3">
+<div class="container mt-3">
     <div class="animated fadeIn">
         <div class="row">
 <?php

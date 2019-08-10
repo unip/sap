@@ -47,7 +47,7 @@
 
 body {
     background: $container-bg;
-    display: table;
+    display: flex;
     font-family: 'Open Sans' sans-serif !important;
     font-size: 16px;
     width: 100%;
@@ -141,6 +141,7 @@ aside.left-panel {
     vertical-align: top;
     width: 280px;
     transition: width 0.3s ease;
+    overflow: auto;
 }
 
 .navbar {
@@ -367,6 +368,9 @@ body.open {
             }
         }
     }
+    .legal {
+        display: none;
+    }
 }
 
 .open aside.left-panel {
@@ -509,11 +513,14 @@ body.open {
     -ms-transition: all 0.35s ease;
     -o-transition: all 0.35s ease;
     transition: all 0.35s ease;
+    flex: 1;
+    height: 100vh;
+    overflow: auto;
 
     .breadcrumbs {
         background-color: #fff;
         display: inline-block;
-        margin-top: 0;
+        margin-top: 70px;
         padding: 0 5px;
         width: 100%;
 
@@ -557,11 +564,17 @@ body.open {
     clear: both;
     display: inline-block;
     padding: 15px 20px 13px;
-    width: 100%;
+    width: calc(100% - 280px);
+    position: fixed;
+    z-index: 2;
 }
 
 .open .right-panel {
-    margin-left: -210px;
+    // flex: 1;
+
+    header {
+        width: calc(100% - 70px);
+    }
 }
 
 header.fixed-top {
@@ -581,7 +594,7 @@ header.fixed-top {
     font-size: 18px;
     height: 43px;
     line-height: 44px;
-    margin: -2px 20px 0 -57px;
+    margin: -2px 20px 0 -40px;
     text-align: center;
     width: 43px;
 }
@@ -1847,6 +1860,12 @@ header .form-inline {
         left: inherit !important;
         right: 0 !important;
         top: 93% !important;
+    }
+}
+
+#bootstrap-data-table-export_wrapper {
+    .row:nth-child(2) .col-sm-12 {
+        overflow-x: auto;
     }
 }
 
