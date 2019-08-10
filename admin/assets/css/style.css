@@ -968,7 +968,7 @@ textarea {
   width: 100%; }
 
 aside.left-panel {
-  background: #272c33;
+  background-color: #a7a7b1;
   display: table-cell;
   height: 100vh;
   min-height: 100%;
@@ -979,7 +979,6 @@ aside.left-panel {
   overflow: auto; }
 
 .navbar {
-  background: #272c33;
   border-radius: 0;
   border: none;
   display: block;
@@ -1037,9 +1036,9 @@ aside.left-panel {
         display: none; }
       .navbar .navbar-nav li > a {
         background: none !important;
-        color: #c8c9ce !important;
+        color: rgba(255, 255, 255, 0.6);
         display: inline-block;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         line-height: 30px;
         padding: 10px 0;
@@ -1047,12 +1046,11 @@ aside.left-panel {
         width: 100%; }
         .navbar .navbar-nav li > a:hover,
         .navbar .navbar-nav li > a:hover .menu-icon {
-          color: #fff !important; }
+          color: white; }
         .navbar .navbar-nav li > a .menu-icon {
-          color: #8b939b;
           float: left;
           margin-top: 8px;
-          width: 55px;
+          margin-right: 10px;
           text-align: left;
           z-index: 9; }
         .navbar .navbar-nav li > a .menu-title-text {
@@ -1115,6 +1113,11 @@ aside.left-panel {
           max-height: 1000px;
           opacity: 1;
           position: static !important; }
+  .navbar .legal {
+    color: black !important;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    padding-top: 30px; }
 
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:focus,

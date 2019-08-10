@@ -47,7 +47,7 @@ $koneksi		= koneksi();
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav text-white">
                     <li class="active">
                         <a href="./index.php"> <i class="menu-icon fa fa-dashboard"></i>Beranda</a>
                     </li>
@@ -84,7 +84,7 @@ $koneksi		= koneksi();
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
-            <div class="legal text-white">
+            <div class="legal">
                 <div class="copyright">
                     &copy; 2019
                 </div>
