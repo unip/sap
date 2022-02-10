@@ -9,7 +9,7 @@
 	"watch-admin-css": "nodemon -e scss -x \"npm run build-admin-css\""
   },
   "dependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.19.1"
   }
 }
